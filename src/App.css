@@ -1,3 +1,16 @@
 .App {
   text-align: center;
 }
+
+.row {
+  display: flex;
+}
+
+.panel-wrapper {
+  /* display: flex; */
+  justify-content: center;
+  align-content: center;
+  width: 10rem;
+  height: 20rem;
+  margin: 0 auto;
+}
