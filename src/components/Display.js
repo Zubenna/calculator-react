@@ -1,8 +1,5 @@
-import React from 'react';
+import React from "react";
 
-export const Display = (props) => {
-    return (
-      <input className='display' type='text' value={props.result}></input>
-    );
-};
+const Display = (props) => <input className="display" type="text" value={props.result}></input>;
 
+export default Display;
