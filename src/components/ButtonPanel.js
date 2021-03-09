@@ -2,10 +2,8 @@ import React from "react";
 import Button from "./Button";
 
 export const ButtonPanel = (props) => {
-  const width2 = { width: '6rem'}
-  const width1 = { width: '3rem'}
-  return (
-    <div className="panel-wrapper">
+    return (
+    <React.Fragment>
       <div className='row'>
        <Button name='AC'></Button>
        <Button name='+/-'></Button>
@@ -31,10 +29,10 @@ export const ButtonPanel = (props) => {
        <Button name='+'></Button>
       </div>
       <div className='row'>
-       <Button style={width1} name='0'></Button>
-       <Button style={width1} name='.'></Button>
-       <Button style={width2} name='='></Button>
+       <Button name='0'></Button>
+       <Button name='.'></Button>
+       <Button name='='></Button>
       </div>
-    </div>
+    </React.Fragment>
   );
 };

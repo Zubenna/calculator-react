@@ -2,9 +2,7 @@ import React from 'react';
 
 export const Display = (props) => {
     return (
-        <div className='display'>
-            <input type='text' />
-        </div>
+      <input className='display' type='text' value={props.result}></input>
     );
 };
 

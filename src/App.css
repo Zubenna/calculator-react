@@ -6,11 +6,20 @@
   display: flex;
 }
 
-.panel-wrapper {
-  /* display: flex; */
+.calc-container {
   justify-content: center;
   align-content: center;
-  width: 10rem;
+  width: 15rem;
   height: 20rem;
   margin: 0 auto;
+}
+
+.display {
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
