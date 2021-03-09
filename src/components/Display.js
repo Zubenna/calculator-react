@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Display = props => (
-  <input className="display" type="text" value={props.result} />
+const Display = ({result}) => (
+  <input className="display" type="text" value={result} />
 );
 
 export default Display;

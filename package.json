@@ -24,10 +24,6 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ],
-    "react/prop-types": [
-      "enabled",
-      { "ignore": "ignore", "customValidators": "customValidator" }
     ]
   },
   "browserslist": {

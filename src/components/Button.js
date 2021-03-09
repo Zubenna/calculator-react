@@ -3,10 +3,8 @@ import '../Button.css';
 
 const isEqual = val => val === '=';
 
-const Button = props => {
-  return (<button type="button" className ={isEqual(props.name) ? 'eqlBtn' : 'btn'}>
-    { props.name }
-  </button>)
-};
+const Button = ({name}) => <button type="button" className={isEqual(name) ? 'eqlBtn' : 'btn'}>
+    { name }
+  </button>
 
 export default Button;
