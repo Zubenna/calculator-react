@@ -1,5 +1,5 @@
 # React Calculator Project
-This is just the preparation for react calculator project. This first milestone is just the project environment setup.
+This is just the preparation for react calculator project. This first milestone is just the project environment setup. The second milestone involves creating basic components that make up the calculator. The components are Button, ButtonPanel, and Display which are located in the components folder within the src directory at the root of the project. The App component contains both the Display and ButtonPanel components which define the user interface of the calculator. The Display component will display the result of each calculation. The ButtonPanel contains the different buttons specified in the simple calculator app.
 
 ## Project SetUp
 Get a local copy of the file. Clone with HTTPS following the steps below.
@@ -36,7 +36,7 @@ npm start
 
 ## Live Version
 Launch live version to confirm that the initial project setup is running on Heroku.
-- [Launch Game](https://calculator-zubenna.herokuapp.com/)
+- [Launch App](https://calculator-zubenna.herokuapp.com/)
 
 ## Built With
 - JavaScript
