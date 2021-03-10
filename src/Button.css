@@ -1,0 +1,18 @@
+.btn {
+  width: 4rem;
+}
+
+.btn,
+.eqlBtn {
+  height: 4rem;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 1.4em;
+  background-color: #e0e1e6;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.eqlBtn {
+  width: 8rem;
+}
