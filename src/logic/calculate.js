@@ -29,7 +29,7 @@ const calculate = (calcData, buttonName) => {
     } else if (next && !operation) {
       total = next;
       operation = buttonName;
-      next - null;
+      next = null;
     } else {
       operation = buttonName;
     }
@@ -41,16 +41,16 @@ const calculate = (calcData, buttonName) => {
       total = null;
     } else if (next) {
       if (
-        buttonName !== '.' ||
-        (buttonName === '.' && next.indexOf(buttonName) < 0)
+        buttonName !== '.'
+        || (buttonName === '.' && next.indexOf(buttonName) < 0)
       ) {
         next = next.concat(buttonName);
       }
     } else {
       next = buttonName;
     }
-    return { total, next, operation };
   }
+  return { total, next, operation };
 };
 
 export default calculate;

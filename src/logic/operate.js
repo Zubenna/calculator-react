@@ -1,26 +1,19 @@
-import Big from "big.js";
+import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const result = '';
+  let result = '';
   switch (operation) {
     case '-':
-      {
-        result = new Big(numberOne).minus(new Big(numberTwo));
-      }
+      result = new Big(numberOne).minus(new Big(numberTwo));
       break;
-
     case '÷':
-      {
         if (numberTwo !== '0') {
           result = new Big(numberOne).div(new Big(numberTwo));
         } else {
           result = '∞';
         }
-      }
       break;
-
     case 'X':
-      {
         if (numberOne === null) {
           result = new Big(numberTwo).times(0.01);
         }
@@ -29,16 +22,13 @@ const operate = (numberOne, numberTwo, operation) => {
         } else {
           result = new Big(numberOne).times(new Big(numberTwo).times(0.01));
         }
-      }
       break;
-
     case '+':
-      {
-        result = new Big(numberOne).plus(new Big(numberTwo));
-      }
+      result = new Big(numberOne).plus(new Big(numberTwo));
       break;
+    default:
+      result = '';
   }
-
   return result;
 };
 
