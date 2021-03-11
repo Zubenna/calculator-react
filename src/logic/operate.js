@@ -13,6 +13,9 @@ const operate = (numberOne, numberTwo, operation) => {
         result = '∞';
       }
       break;
+    case '%':
+        result = new Big(numberTwo).div(new Big(100));
+      break;
     case 'X':
       if (numberOne === null) {
         result = new Big(numberTwo).times(0.01);
