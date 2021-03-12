@@ -18,8 +18,21 @@
   width: 100%;
   text-align: right;
   box-sizing: border-box;
-  height: 2.5rem;
-  font-size: 1.5rem;
+  height: 3.6rem;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border: 2px solid #000;
+  background-color: #e0e1e6;
+}
+
+.display p {
+  color: #000;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  background: red;
+  /* margin-bottom: 1rem; */
+  /* line-height: 2rem; */
+  /* width: 10rem;  */
+  height: 4rem;
 }
