@@ -34,6 +34,9 @@ npm start
 - Once the server is fully started, you will see the project opening a different tab on your browser at port http://localhost:3000/. The page now displays the react.js application user interface. For this milestone, the page will display the text below
 "Testing React Calculator Project Setup...Testing Deployment".
 
+## Calculator Logic
+Two files, calculate.js and operate.js are created inside the logic directory. The calculate.js takes two arguments, an object, calcData, and buttonName. The calcData object has total, next, and operation as properties. This function manipulates the properties of the calcData object using the buttonName supplied to it. If the buttonName includes any of ['+', '-', '÷', 'X', '%'], It calls the operate.js function which will use the operation name to calculate the total using the Big.js methods. The operate function implements basic mathematical calculation which includes percentage, multiplication, division, addition, and subtraction.
+
 ## Live Version
 Launch live version to confirm that the initial project setup is running on Heroku.
 - [Launch App](https://calculator-zubenna.herokuapp.com/)
