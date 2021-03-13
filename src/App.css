@@ -9,30 +9,25 @@
 .calc-container {
   justify-content: center;
   align-content: center;
-  width: 15rem;
-  height: 20rem;
+  width: 40rem;
+  height: 40rem;
   margin: 0 auto;
 }
 
 .display {
-  width: 100%;
+  width: 40rem;
   text-align: right;
   box-sizing: border-box;
-  height: 3.6rem;
+  height: 6rem;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border: 2px solid #000;
-  background-color: #e0e1e6;
+  border: 2px solid #413f3f;
+  background: #898b8bd8;
 }
 
 .display p {
-  color: #000;
+  color: #fff;
   padding-right: 0.5rem;
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
-  background: red;
-  /* margin-bottom: 1rem; */
-  /* line-height: 2rem; */
-  /* width: 10rem;  */
-  height: 4rem;
+  padding-top: 0.3rem;
+  font-size: 2rem;
 }

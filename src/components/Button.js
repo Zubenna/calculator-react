@@ -2,10 +2,14 @@ import React from 'react';
 import '../Button.css';
 import PropTypes from 'prop-types';
 
-const isEqual = val => val === '=';
+const isEqual = val => val === '0';
+
+const operators = ['+', '-', '÷', 'x', '='];
+
+const isColor = val => operators.includes(val);
 
 const Button = ({ name, onClick }) => (
-  <button type="button" className={isEqual(name) ? 'eqlBtn' : 'btn'} onClick={() => onClick(name)}>
+  <button type="button" className={`${isEqual(name) ? 'zeroBtn' : 'btn'} ${isColor(name) ? 'colorBtn' : ''}`} onClick={() => onClick(name)}>
     { name }
   </button>
 );

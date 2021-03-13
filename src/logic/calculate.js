@@ -20,8 +20,6 @@ const calculate = (calcData, buttonName) => {
       }
       operation = buttonName;
       total = operate(null, next, operation);
-      // console.log(operation);
-      // console.log(next);
       next = null;
       operation = null;
     } else if (total && next && operation) {

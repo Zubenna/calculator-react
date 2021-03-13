@@ -14,7 +14,7 @@ const operate = (numberOne, numberTwo, operation) => {
       }
       break;
     case '%':
-      result = new Big(numberTwo).div(100);
+      result = new Big(numberTwo).div(new Big(100));
       break;
     case 'x':
       if (numberOne === null) {
@@ -30,20 +30,16 @@ const operate = (numberOne, numberTwo, operation) => {
       result = new Big(numberOne).plus(new Big(numberTwo));
       break;
     default:
-      result = '';
+      result = null;
   }
 
-  //   const newResult = validateResult(result);
-  //   console.log(result);
-  let y = result.toFixed();
-  if ((y.includes('.')) && y.length > 18) {
-    y = result.toFixed(17);
-    // console('I am more tha 15');
-  } else if (y.length > 18) {
-    // y = y.slice(0, 16);
-    y = 'value too large';
+  let newResult = result.toFixed();
+  if ((newResult.includes('.')) && newResult.length > 18) {
+    newResult = result.toFixed(17);
+  } else if (newResult.length > 18) {
+    newResult = 'value too large';
   }
-  return y;
+  return newResult;
 };
 
 export default operate;

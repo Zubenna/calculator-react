@@ -11,7 +11,7 @@ class App extends Component {
     this.state = {
       total: null,
       operation: null,
-      next: 0,
+      next: null,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Simple Calculator UI Version 1</h1>
+        <h1>Simple Calculator; Final Version</h1>
         <section className="calc-container">
           <>
             <Display result={showResult(this.state)} />
