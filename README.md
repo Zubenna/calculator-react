@@ -1,5 +1,20 @@
 # React Calculator Project
-This is just the preparation for react calculator project. This first milestone is just the project environment setup. The second milestone involves creating basic components that make up the calculator. The components are Button, ButtonPanel, and Display which are located in the components folder within the src directory at the root of the project. The App component contains both the Display and ButtonPanel components which define the user interface of the calculator. The Display component will display the result of each calculation. The ButtonPanel contains the different buttons specified in the simple calculator app.
+The first milestone deals with the project environment setup. The second milestone involves creating basic components that made up the calculator. The components are Button, ButtonPanel, and Display which are located in the components folder within the src directory at the root of the project. The App component contains both the Display and ButtonPanel components which define the user interface of the calculator. The Display component will display the result of each calculation. The ButtonPanel contains the different buttons specified in the simple calculator app. In the fourth milestone, the calculator logic was implemented in the calculator and operate modules located in the logic directory. The calculate function performs the calculation using the button name and the current object state passed to it as an argument. In the final milestone, all the components and functions are connected to fully implement the calculator functionality. On clicking each button, the ButtonPanel in the App.js file passes the handleClick function and button name as props to the Button Component. The button component implements the handleClick function which takes the button name as an argument and returns clickHandler from props. The handleClick function calls the calculate function passing the calculator object state and button name as an argument to it. The calculator object state has three properties; total, next, and operation. The calculate function uses the button name to change the values of these properties following the program logic. Here, multiplication, addition, subtraction, division, percentage calculation, etc are computed and stored as result in the calcData object.
+Final styling of the calculator UI was also implemented in this milestone.
+
+The Display component calls the showResult function passing the object state to it. The showResult function uses the object state to validate and return the equivalent result on the calculator display as shown in the picture. All buttons are working as expected, However, this project can still be improved by adding more features.
+
+## Preview
+![image](images/calculator.png)
+
+## Features
+- Handles Addition.
+- Handles Subtraction.
+- Converts number to percentage.
+- Computes multiplication.
+- Computes division.
+- Clears screen when needed.
+- Has accuracy up to 16 places of decimal.
 
 ## Project SetUp
 Get a local copy of the file. Clone with HTTPS following the steps below.
@@ -16,7 +31,7 @@ git clone https://github.com/Zubenna/calculator-react.git
 ```
 ## Access Project Folder 
 - Depending on where the project files are downloaded to, either Hard Disk(HDD), Desktop or Documents directory in your computer after completing the step above.
-- Click on the folder calculator to open it.
+- Double click on the folder calculator to open it.
 - Inside the folder, right-click and click on terminal or cmd depending on your Operating System to open it.
 
 ## Set Up Project Locally in Your Computer
@@ -24,26 +39,26 @@ git clone https://github.com/Zubenna/calculator-react.git
 ```
 npm install
 ```
-- Wait for some time to install all the game packages.
-- Once the installation is completed, you will see messages like '23 packages has been added, 'audited 1335 packages in 37.888s' etc.
-
-- Now, type the command below in your cmd or terminal to start the project locally. Wait for some time.
+- Wait for some time to install all the app packages.
+- Once the installation is completed.
+- Type the command below in your cmd or terminal to start the project locally. Wait for some time.
 ```
 npm start
 ```
-- Once the server is fully started, you will see the project opening a different tab on your browser at port http://localhost:3000/. The page now displays the react.js application user interface. For this milestone, the page will display the text below
-"Testing React Calculator Project Setup...Testing Deployment".
+- Once the server is fully started, you will see the project opening a different tab on your browser at port http://localhost:3000/. The page now displays the calculator app built with react.js. You can use the calculator now.
 
 ## Calculator Logic
 Two files, calculate.js and operate.js are created inside the logic directory. The calculate.js takes two arguments, an object, calcData, and buttonName. The calcData object has total, next, and operation as properties. This function manipulates the properties of the calcData object using the buttonName supplied to it. If the buttonName includes any of ['+', '-', '÷', 'X', '%'], It calls the operate.js function which will use the operation name to calculate the total using the Big.js methods. The operate function implements basic mathematical calculation which includes percentage, multiplication, division, addition, and subtraction.
 
 ## Live Version
-Launch live version to confirm that the initial project setup is running on Heroku.
+Launch live version.
 - [Launch App](https://calculator-zubenna.herokuapp.com/)
 
 ## Built With
 - JavaScript
-- React
+- React.js
+- CSS
+- Notable Packages, Big.js, etc
 
 ## Author
 👤 **Nnamdi Emelu**
