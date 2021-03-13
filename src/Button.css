@@ -1,18 +1,21 @@
 .btn {
-  width: 4rem;
+  width: 10rem;
 }
 
 .btn,
-.eqlBtn {
-  height: 4rem;
+.zeroBtn {
+  height: 6rem;
   align-items: center;
-  font-weight: lighter;
-  font-size: 1.4em;
+  font-size: 1.5rem;
   background-color: #e0e1e6;
-  padding: 0.5rem;
+  padding: 1rem;
   box-sizing: border-box;
 }
 
-.eqlBtn {
-  width: 8rem;
+.zeroBtn {
+  width: 20rem;
+}
+
+.colorBtn {
+  background-color: #f90;
 }

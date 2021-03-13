@@ -1,38 +1,43 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-const ButtonPanel = () => (
+const ButtonPanel = ({ onClick }) => (
   <>
     <div className="row">
-      <Button name="AC" />
-      <Button name="+/-" />
-      <Button name="%" />
-      <Button name="÷" />
+      <Button name="AC" onClick={onClick} />
+      <Button name="+/-" onClick={onClick} />
+      <Button name="%" onClick={onClick} />
+      <Button name="÷" onClick={onClick} />
     </div>
     <div className="row">
-      <Button name="7" />
-      <Button name="8" />
-      <Button name="9" />
-      <Button name="X" />
+      <Button name="7" onClick={onClick} />
+      <Button name="8" onClick={onClick} />
+      <Button name="9" onClick={onClick} />
+      <Button name="x" onClick={onClick} />
     </div>
     <div className="row">
-      <Button name="4" />
-      <Button name="5" />
-      <Button name="6" />
-      <Button name="-" />
+      <Button name="4" onClick={onClick} />
+      <Button name="5" onClick={onClick} />
+      <Button name="6" onClick={onClick} />
+      <Button name="-" onClick={onClick} />
     </div>
     <div className="row">
-      <Button name="1" />
-      <Button name="2" />
-      <Button name="3" />
-      <Button name="+" />
+      <Button name="1" onClick={onClick} />
+      <Button name="2" onClick={onClick} />
+      <Button name="3" onClick={onClick} />
+      <Button name="+" onClick={onClick} />
     </div>
     <div className="row">
-      <Button name="0" />
-      <Button name="." />
-      <Button name="=" />
+      <Button name="0" onClick={onClick} />
+      <Button name="." onClick={onClick} />
+      <Button name="=" onClick={onClick} />
     </div>
   </>
 );
+
+ButtonPanel.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default ButtonPanel;
