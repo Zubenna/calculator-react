@@ -28,7 +28,7 @@ class App extends Component {
         <section className="calc-container">
           <>
             <Display result={showResult(this.state)} />
-            <ButtonPanel onClick={this.handleClick} />
+            <ButtonPanel clickHandler={this.handleClick} />
           </>
         </section>
       </div>
