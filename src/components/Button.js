@@ -8,15 +8,21 @@ const operators = ['+', '-', '÷', 'x', '='];
 
 const isColor = val => operators.includes(val);
 
-const Button = ({ name, onClick }) => (
-  <button type="button" className={`${isEqual(name) ? 'zeroBtn' : 'btn'} ${isColor(name) ? 'colorBtn' : ''}`} onClick={() => onClick(name)}>
-    { name }
-  </button>
-);
+const Button = ({ name, clickHandler }) => {
+  const handleClick = () => {
+    clickHandler(name);
+  };
+
+  return (
+    <button type="button" className={`${isEqual(name) ? 'zeroBtn' : 'btn'} ${isColor(name) ? 'colorBtn' : ''}`} onClick={handleClick}>
+      {name}
+    </button>
+  );
+};
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default Button;
