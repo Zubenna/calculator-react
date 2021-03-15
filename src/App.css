@@ -1,3 +1,33 @@
 .App {
   text-align: center;
 }
+
+.row {
+  display: flex;
+}
+
+.calc-container {
+  justify-content: center;
+  align-content: center;
+  width: 40rem;
+  height: 40rem;
+  margin: 0 auto;
+}
+
+.display {
+  width: 40rem;
+  text-align: right;
+  box-sizing: border-box;
+  height: 6rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 2px solid #413f3f;
+  background: #898b8bd8;
+}
+
+.display p {
+  color: #fff;
+  padding-right: 0.5rem;
+  padding-top: 0.3rem;
+  font-size: 2rem;
+}
