@@ -1,0 +1,41 @@
+.link-box {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 1rem;
+}
+
+.link-menu {
+  text-decoration: none;
+  padding-right: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.3rem;
+}
+
+.home-title,
+.quote-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  color: blue;
+}
+
+.home {
+  margin-top: 3rem;
+}
+
+.home,
+.quote p {
+  font-size: 1.3rem;
+  width: 80%;
+  margin: 0 auto; 
+}
+
+.home h3 {
+  padding-top: 2rem;
+}
+
+.quote p {
+  padding-top: 4rem;
+}
