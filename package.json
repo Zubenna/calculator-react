@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint.js"
   },
@@ -42,11 +42,20 @@
   },
   "devDependencies": {
     "babel-eslint": "10.1.x",
+    "babel-jest": "^26.6.3",
+    "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "eslint": "7.11.x",
     "eslint-config-airbnb": "18.1.x",
     "eslint-plugin-import": "2.22.x",
     "eslint-plugin-jsx-a11y": "6.2.x",
     "eslint-plugin-react": "7.20.x",
-    "eslint-plugin-react-hooks": "2.5.x"
+    "eslint-plugin-react-hooks": "2.5.x",
+    "jest-cli": "^26.6.3",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^17.0.1",
+    "redux-mock-store": "^1.5.4",
+    "sinon": "^9.2.4"
   }
 }
