@@ -23,7 +23,7 @@ const App = () => {
       <h1 className="app-head">Simple Calculator; Final Version</h1>
       <section className="calc-container">
         <>
-          <Display result={obj.next || obj.operation || obj.total || 0} />
+          <Display result={obj.next || obj.operation || obj.total || '0'} />
           <ButtonPanel clickHandler={handleClick} />
         </>
       </section>
