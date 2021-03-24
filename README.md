@@ -63,7 +63,7 @@ To run the test, navigate to the root of the project as explained above in (Set 
 ```
 npm test
 ```
-from the terminal. Jest will run all the tests written for this project.
+from the terminal. Jest will run all the tests written for this project. Result of the test will be displayed in the terminal for your assesment.
 
 ## Built With
 - JavaScript
