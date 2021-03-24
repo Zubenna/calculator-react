@@ -27,7 +27,7 @@ it("Should render a button of type 'button'", () => {
 });
 
 test('Button name should be 5', () => {
-  const { container } = render(<Button name={5} clickHandler={() => {}} name="5" />);
+  const { container } = render(<Button clickHandler={() => {}} name="5" />);
   const buttons = container.getElementsByTagName('button');
   expect(buttons[0].textContent).toBe('5');
 });
