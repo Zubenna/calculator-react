@@ -33,13 +33,13 @@ const operate = (numberOne, numberTwo, operation) => {
       result = null;
   }
 
-    let newResult = result.toFixed();
-    if ((newResult.includes('.')) && newResult.length > 18) {
-      newResult = result.toFixed(17);
-      } else if (newResult.length > 18) {
-        newResult = 'value too large';
-    }
-    return newResult;
+  let newResult = result.toFixed();
+  if ((newResult.includes('.')) && newResult.length > 18) {
+    newResult = result.toFixed(17);
+  } else if (newResult.length > 18) {
+    newResult = 'value too large';
+  }
+  return newResult;
 };
 
 export default operate;
