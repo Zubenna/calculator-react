@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 const Display = props => {
   const { result } = props;
-  return(
-  <div className="display">
-    <p>{ result }</p>
-  </div>
+  return (
+    <div className="display">
+      <p>{ result }</p>
+    </div>
   );
 };
 

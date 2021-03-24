@@ -14,14 +14,14 @@ beforeEach(() => {
 afterEach(cleanup);
 
 test('Should render one button', () => {
-  const { container } = render(<Button name={4} clickHandler={() => {}} name="4" />);
+  const { container } = render(<Button clickHandler={() => {}} name="4" />);
   const buttons = container.getElementsByTagName('button');
   expect(buttons.length).toBe(1);
 });
 
 it("Should render a button of type 'button'", () => {
   const tree = renderer
-    .create(<Button name={3} clickHandler={() => {}} value="3" />)
+    .create(<Button clickHandler={() => {}} name="3" />)
     .toJSON();
   expect(tree.type).toBe('button');
 });
