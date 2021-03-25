@@ -53,11 +53,24 @@ Two files, calculate.js and operate.js are created inside the logic directory. T
 Launch live version.
 - [Launch App](https://calculator-zubenna.herokuapp.com/)
 
+## Testing
+React testing framework jest was used in testing this project.
+In the component directory, within the src directory, __test__ folder is created which contains all the components tests. Also, __test__ folder was created in the logic folder which contains tests for the calculate.js file which is the main app logic.
+
+## Run Test
+To run the test, navigate to the root of the project as explained above in (Set up the project locally). Run the command,
+
+```
+npm test
+```
+from the terminal. Jest will run all the tests written for this project. Result of the test will be displayed in the terminal for your assesment.
+
 ## Built With
 - JavaScript
 - React.js
 - CSS
 - Notable Packages, Big.js, etc
+- Testted with jest.
 
 ## Author
 👤 **Nnamdi Emelu**
